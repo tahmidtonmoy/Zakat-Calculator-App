@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#249E92">
+
+    <DigitalClock
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="#DBDEED"
+        android:textStyle="bold"
+        />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/zakat" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="“But (even so), if they repent, establish regular prayers,and give their Zakat, they are your brethren in Faith.” (Surah Al-Taubah 9:11)."
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        android:background="#6DB9DC"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Do You Want to Know How Much You Have to Pay for Zakat?"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="17dp"
+        android:textColor="@color/black"
+        android:layout_margin="5dp"
+        android:background="#DFCB8E"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Your Gold Amount"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:background="#6DB9DC"
+        />
+
+    <EditText
+        android:id="@+id/gold"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Gold Amount in Taka"
+        android:gravity="center"
+        android:inputType="number"
+        android:background="#DFCB8E"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Your Silver Amount"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:background="#6DB9DC"
+        />
+    <EditText
+        android:id="@+id/silver"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Silver Amount in Taka"
+        android:gravity="center"
+        android:inputType="number"
+        android:background="#DFCB8E"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        />
+
+    <ImageButton
+        android:id="@+id/button"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:background="@drawable/click"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:padding="5dp"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Result"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:background="#31837B"/>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-8931936554324369/7395879911">
+    </com.google.android.gms.ads.AdView>
+
+
+
+
+</LinearLayout>
+
+
+
